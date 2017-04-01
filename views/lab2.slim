@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title Lab 2
+    meta charset="utf-8" /
+    meta content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport" /
+    script src="/lib/d3.min.js" 
+    script src="/lib/function-plot.js" 
+
+body
+  .mainbox
+    form
+      p 
+        label for="eq_x" Enter X:
+        input#eq_x type="text"  value="cos(t) + cos(6t)/2 + sin(14t)/3" onchange="updateValues(event)" placeholder="x = f(t)" /
+      
+      p 
+        label for="eq_y" Enter y:
+        input#eq_y type="text"  value="sin(t) + sin(6t)/2 + cos(14t)/3" onchange="updateValues(event)" placeholder="y = g(t)" /
+    
+      p 
+        label for="range_orn" Enter N:
+        input#range_orn type="range" name="rangeOrn" value="1" min="1" max="9" onchange="updateValues(event)" /
+      
+      p
+      label for="range_orn" Lab mode:   
+      label.switch
+        input#checkbox type="checkbox" /
+        .slider_round
+      
+      p       
+      label for="range_orn" Effect:   
+      label.switch 
+        input#make_effect type="checkbox" /
+        .slider_round
+      
+      #lab_mode style=("display: none;")
+        p
+          label for="range_a" Enter A:
+          input#range_a type="range" name="rangeA" value="1" min="1" max="10" onchange="updateValues(event)" /
+        
+        p
+          label for="range_b" Enter B:
+          input#range_b type="range" name="rangeB" value="1" min="1" max="10" onchange="updateValues(event)" /
+        
+        p
+          label for="range_r" Enter R: 
+          input#range_r type="range" name="rangeR" value="1" min="1" max="10" onchange="updateValues(event)" /
+  
+  .graph
+    #plot
+  
+  script src="/active.js"
+  script src="/plot.js"  

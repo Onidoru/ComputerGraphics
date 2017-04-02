@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'slim'
 require 'sass'
-require 'sinatra/reloader'
+#require 'sinatra/reloader'
 require 'rubygems'
 
 get('/styles.css') { scss :styles }

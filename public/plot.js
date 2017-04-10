@@ -17,8 +17,8 @@ function draw() {
 
 
     if ((typeof scale_X == 'undefined') || (typeof scale_Y == 'undefined')) {
-        scale_X = 11.2*1.5;
-        scale_Y = 7*1.5;
+        scale_X = 11.2 * 1.5;
+        scale_Y = 7 * 1.5;
     }
 
     // Ornament cycle. Each time reassigns part hash and pushes it to the Array

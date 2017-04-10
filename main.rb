@@ -4,16 +4,14 @@ require 'sass'
 require 'sinatra/reloader'
 require 'rubygems'
 
+# If there are any problems with reloading javascript while using
+# Chrome-based browsers, ctrl+shift+r for hard reload is recommended
+
 get('/styles.css') { scss :styles }
 
 get '/?' do
   @title = 'Home'
   slim :home
-end
-
-get '/about/?' do
-  @title = 'About'
-  slim :about
 end
 
 not_found do
@@ -29,9 +27,4 @@ end
 get '/lab2/?' do
   @title = 'Lab 2'
   slim :lab2
-end
-
-get '/lab3/?' do
-  @title = 'Lab 3'
-  slim :lab3
 end

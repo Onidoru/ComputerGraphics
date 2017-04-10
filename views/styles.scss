@@ -6,6 +6,7 @@ $main-font: Helvetica, Arial, sans-serif;
 
 body {
     font-family: $main-font;
+    overflow: hidden;
 }
 
 h1 {
@@ -49,6 +50,7 @@ nav {
     @include tabs ($background: $black, $color: $white);
     font-weight: bold;
 }
+
 .mainbox {
     display: inline-block;
     width: 45%;

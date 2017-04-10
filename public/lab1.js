@@ -1,5 +1,4 @@
 var container;
-var stats;
 
 var camera;
 var scene;
@@ -46,9 +45,6 @@ function init() {
     renderer.sortElements = false;
     container.appendChild(renderer.domElement);
 
-    stats = new Stats();
-    container.appendChild(stats.dom);
-
     document.addEventListener('mousedown', onDocumentMouseDown, false);
     document.addEventListener('touchstart', onDocumentTouchStart, false);
     document.addEventListener('touchmove', onDocumentTouchMove, false);
@@ -59,7 +55,7 @@ function init() {
 
 
 function doubleTriangle(x, y, px, py) {
-	var shape = new THREE.Shape();
+    var shape = new THREE.Shape();
     shape.moveTo(px, py);
     shape.lineTo(-x + px, y + py);
     shape.lineTo(x + px, y + py);
@@ -159,10 +155,9 @@ function onDocumentTouchMove(event) {
 }
 
 function animate() {
-	rotate(group, 0.01, "right");
+    rotate(group, 0.01, "right");
     requestAnimationFrame(animate);
     render();
-    stats.update();
 }
 
 function render() {
@@ -171,5 +166,5 @@ function render() {
 }
 
 function rotate(group, speed, direction) {
-	group.rotation.y += (direction == "left")?-speed:speed;
+    group.rotation.y += (direction == "left") ? -speed : speed;
 }

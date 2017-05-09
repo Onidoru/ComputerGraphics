@@ -6,7 +6,7 @@ $main-font: Helvetica, Arial, sans-serif;
 
 body {
   font-family: $main-font;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 h1 {
@@ -221,6 +221,8 @@ input[type=range]::-ms-thumb {
   }
 }
 
+
+
 input {
   &:checked + .slider_round {
     background-color: #2196f3;
@@ -254,4 +256,26 @@ input {
 
 #ball {
   background: red;
+}
+
+
+canvas {
+margin: auto;
+  float: left;
+  display:inline-table;
+}
+
+.chart {
+    padding: 20px;
+    margin: 0px;
+}
+
+#myLinear, #myBar {
+  max-width: 900px;
+  max-height: 700px;
+  padding-bottom: 100px;
+}
+
+#myPie, #myPolar {
+  max-width: 900px;
 }

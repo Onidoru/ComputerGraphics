@@ -29,6 +29,10 @@ get '/lab2/?' do
   slim :lab2
 end
 
+get '/lab4/?' do
+  slim :lab4
+end
+
 get '/lab5/?' do
   @title = 'Lab 5'
   slim :lab5

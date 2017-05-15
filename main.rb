@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'slim'
 require 'sass'
-# require 'sinatra/reloader'
+require 'sinatra/reloader'
 require 'rubygems'
 
 # If there are any problems with reloading javascript while using
@@ -36,4 +36,14 @@ end
 get '/lab5/?' do
   @title = 'Lab 5'
   slim :lab5
+end
+
+get '/lab6/?' do
+  @title = 'Lab 6'
+  slim :lab6
+end
+
+get '/lab7/?' do
+  @title = 'Lab 7'
+  slim :lab7
 end

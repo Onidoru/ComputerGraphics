@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'slim'
 require 'sass'
-require 'sinatra/reloader'
 require 'rubygems'
+# require 'sinatra/reloader'
 
 # If there are any problems with reloading javascript while using
 # Chrome-based browsers, ctrl+shift+r for hard reload is recommended

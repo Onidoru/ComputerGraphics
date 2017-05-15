@@ -11,3 +11,9 @@ By now there are 2 labs available:
 
 <h3>Lab 2</h3>
 2D plot builder of parametric functions (x = f(t), y = g(t)) was created, usind d3.js , function-plot.js and math.js libraries.
+
+<h3>Lab 4</h3>
+Charts & Diagrams using Chart.js
+
+<h3>Lab 5</h3>
+Simple ball moving on the parametric curve trajectory. 

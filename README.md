@@ -4,8 +4,6 @@ This project is created due to the computer graphics course in a pair with <a hr
 Project consists of eight different labs, each of which is done during the current studying term.
 Deployed using Sinatra.
 
-By now there are 2 labs available:
-
 <h3>Lab 1</h3>
 3D animated figure and ornament were created, using three.js library.
 
@@ -19,7 +17,9 @@ Charts & Diagrams using Chart.js
 Simple ball moving on the parametric curve trajectory.
 
 <h3>Lab 6</h3>
-3D octahedron using Three.js  
+3D octahedron using Three.js. You can play with it with mouse. 
 
 <h3>Lab 7</h3>
-Combination of square pyramid and triangular prism, using polyhedron geometry and Three,js
+Combination of square pyramid and triangular prism, using polyhedron geometry and Three.js. You can play with it with mouse.
+
+Project closed 
